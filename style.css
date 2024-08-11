@@ -1,0 +1,19 @@
+body {
+    font-family: Consolas, sans-serif;
+    background-color: #F0F0F0;
+    color: #101010;
+    text-align: left;
+	line-height: 1.25;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+	font-family: Consolas, sans-serif;
+    color: #404040;
+}
+
+p {
+	font-family: 'Segoe UI', sans-serif;
+	color: #101010;
+}
