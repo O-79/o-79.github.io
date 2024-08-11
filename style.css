@@ -62,7 +62,7 @@ p {
 }
 
 .custom-button-0 {
-	background: linear-gradient(to right, #DDCC00, #B7A800);
+	background: linear-gradient(to right, #2FB7E0, #2F59E0);
 }
 
 .custom-button-0::before {
@@ -70,7 +70,7 @@ p {
 }
 
 .custom-button-1 {
-	background: linear-gradient(to right, #2FB7E0, #279ABA);
+	background: linear-gradient(to right, #642FE0, #C22FE0);
 }
 
 .custom-button-1::before {
@@ -82,7 +82,7 @@ p {
 }
 
 .custom-button-2 {
-	background: linear-gradient(to right, #6844C4, #52379E);
+	background: linear-gradient(to right, #E02F9F, #E02F41);
 }
 
 .custom-button-2::before {
