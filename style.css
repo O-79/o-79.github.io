@@ -1,3 +1,18 @@
+:root {
+	--col-l-0-h: 197;
+	--col-r-0-h: 237;
+	--col-l-1-h: 237;
+	--col-r-1-h: 320;
+	--col-l-2-h: 320;
+	--col-r-2-h: 20;
+	--col-l-0: #2FB7E0;
+	--col-r-0: #582FE0;
+	--col-l-1: #582FE0;
+	--col-r-1: #E02FB7;
+	--col-l-2: #E02FB7;
+	--col-r-2: #E0582F;
+}
+
 body {
     font-family: Consolas, sans-serif;
     background-color: #F0F0F0;
@@ -48,73 +63,127 @@ body.dark-mode p {
 }
 
 .custom-button {
-	z-index: 1;
     cursor: pointer;
-    background: linear-gradient(to right, #DDCC00, #B7A800);
-    background-size: 200% 100%;
-	font-family: Consolas, sans-serif;
-	font-size: 24px;
-    color: #FFFFFF;
+    background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
+    font-family: Consolas, sans-serif;
     font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    transition: background-position 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.custom-button::before {
-	z-index: -1;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.custom-button:hover {
-    background-position: -100% 0;
-}
-
-.custom-button:hover::before {
-    opacity: 1;
-}
-
-.custom-button span {
-    position: relative;
-    z-index: 2;
 }
 
 .custom-button-0 {
-	background: linear-gradient(to right, #2FB7E0, #2F59E0);
+	z-index: 1;
+	position: relative;
+    background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
 }
 
 .custom-button-0::before {
-    background-image: url('resources/IMG-CareerTree.png');
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-0-h) - 90), 100%, 50%), hsl(calc(var(--col-r-0-h) - 120), 100%, 50%));
+	transition: opacity 0.75s linear;
+	opacity: 0;
+    border-radius: 4px;
+}
+
+.custom-button-0:hover::before {
+	opacity: 1;
 }
 
 .custom-button-1 {
-	background: linear-gradient(to right, #642FE0, #C22FE0);
+	z-index: 1;
+	position: relative;
+    background-image: linear-gradient(to right, var(--col-l-1), var(--col-r-1));
+}
+
+.custom-button-1::before {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-1-h) - 90), 100%, 50%), hsl(calc(var(--col-r-1-h) - 120), 100%, 50%));
+	transition: opacity 0.75s linear;
+	opacity: 0;
+    border-radius: 4px;
+}
+
+.custom-button-1:hover::before {
+	opacity: 1;
+}
+
+.custom-button-2 {
+	z-index: 1;
+	position: relative;
+    background-image: linear-gradient(to right, var(--col-l-2), var(--col-r-2));
+}
+
+.custom-button-2::before {
+	z-index: -1;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-2-h) - 90), 100%, 50%), hsl(calc(var(--col-r-2-h) - 120), 100%, 50%));
+	transition: opacity 0.75s linear;
+	opacity: 0;
+    border-radius: 4px;
+}
+
+.custom-button-2:hover::before {
+	opacity: 1;
+}
+
+.custom-button-1 {
+    background-image: linear-gradient(to right, var(--col-l-1), var(--col-r-1));
+}
+
+.custom-button-2 {
+    background-image: linear-gradient(to right, var(--col-l-2), var(--col-r-2));
+}
+
+.custom-button-1:hover {
+    background-image: linear-gradient(to right, hsl(calc(var(--col-l-1-h) - 30), 100%, 50%), hsl(calc(var(--col-r-1-h) - 30), 100%, 50%));
+}
+
+.custom-button-2:hover {
+    background-image: linear-gradient(to right, hsl(calc(var(--col-l-2-h) - 30), 100%, 50%), hsl(calc(var(--col-r-2-h) - 30), 100%, 50%));
+}
+
+/* USELESS
+.custom-button:not(:hover) {
+    background-size: 200% 100%;
+}
+*/
+
+/*
+.custom-button-0::before {
+    background-image: url('resources/IMG-CareerTree.png');
 }
 
 .custom-button-1::before {
     background-image: url('resources/IMG-ImageEdit.png');
 }
 
-.custom-button-1:hover {
-    color: #000000;
-}
-
-.custom-button-2 {
-	background: linear-gradient(to right, #E02F9F, #E02F41);
-}
-
 .custom-button-2::before {
     background-image: url('resources/IMG-SonicEdit.png');
 }
+*/
+
+/*
+.custom-button-1:hover {
+    color: #000000;
+}
+*/
