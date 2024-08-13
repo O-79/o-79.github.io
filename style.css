@@ -18,8 +18,38 @@ p {
     color: #101010;
 }
 
+.theme-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.theme-toggle img {
+    width: 32px;
+    height: 32px;
+}
+
+body.dark-mode {
+    background-color: #404040;
+    color: #F0F0F0;
+}
+
+body.dark-mode h1 {
+    color: #C0C0C0;
+}
+
+body.dark-mode p {
+    color: #F0F0F0;
+}
+
 .custom-button {
 	z-index: 1;
+    cursor: pointer;
     background: linear-gradient(to right, #DDCC00, #B7A800);
     background-size: 200% 100%;
 	font-family: Consolas, sans-serif;
@@ -78,7 +108,7 @@ p {
 }
 
 .custom-button-1:hover {
-    color: #101010;
+    color: #000000;
 }
 
 .custom-button-2 {
