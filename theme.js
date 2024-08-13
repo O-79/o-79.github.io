@@ -7,9 +7,9 @@ theme_toggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     if (body.classList.contains('dark-mode')) {
         theme_icon.src = 'resources/ICO-Sun.png';
-		GIF_COW.src = 'resources/GIF-Cow-ALT.gif';
+		GIF_COW.src = 'resources/GIF-Cow-Dark.gif';
     } else {
         theme_icon.src = 'resources/ICO-Moon.png';
-		GIF_COW.src = 'resources/GIF-Cow.gif';
+		GIF_COW.src = 'resources/GIF-Cow-Light.gif';
     }
 });
