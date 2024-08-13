@@ -161,29 +161,3 @@ body.dark-mode p {
 .custom-button-2:hover {
     background-image: linear-gradient(to right, hsl(calc(var(--col-l-2-h) - 30), 100%, 50%), hsl(calc(var(--col-r-2-h) - 30), 100%, 50%));
 }
-
-/* USELESS
-.custom-button:not(:hover) {
-    background-size: 200% 100%;
-}
-*/
-
-/*
-.custom-button-0::before {
-    background-image: url('resources/IMG-CareerTree.png');
-}
-
-.custom-button-1::before {
-    background-image: url('resources/IMG-ImageEdit.png');
-}
-
-.custom-button-2::before {
-    background-image: url('resources/IMG-SonicEdit.png');
-}
-*/
-
-/*
-.custom-button-1:hover {
-    color: #000000;
-}
-*/
