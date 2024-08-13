@@ -88,7 +88,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-0-h) - 90), 100%, 50%), hsl(calc(var(--col-r-0-h) - 120), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-0-h) - 150), 100%, 50%), hsl(calc(var(--col-r-0-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -112,7 +112,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-1-h) - 90), 100%, 50%), hsl(calc(var(--col-r-1-h) - 120), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-1-h) - 150), 100%, 50%), hsl(calc(var(--col-r-1-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -136,7 +136,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-2-h) - 90), 100%, 50%), hsl(calc(var(--col-r-2-h) - 120), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-2-h) - 150), 100%, 50%), hsl(calc(var(--col-r-2-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
