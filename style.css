@@ -58,7 +58,7 @@ body.dark-mode p {
     font-weight: bold;
     padding: 8px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-position 0.3s;
     position: relative;
