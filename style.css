@@ -62,7 +62,39 @@ body.dark-mode p {
     color: #F0F0F0;
 }
 
+.custom-button-container {
+    position: relative;
+    display: inline-block;
+}
+
+.info-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 12px;
+    color: #404040;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.50s ease-out;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: -1;
+    border: none;
+    border-radius: 4px;
+}
+
+.custom-button-container:hover .info-text {
+    transform: translateY(10%);
+    opacity: 1;
+    z-index: 1;
+}
+
 .custom-button {
+    position: relative;
+    z-index: 2;
     cursor: pointer;
     background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
     font-family: Consolas, sans-serif;
@@ -75,13 +107,13 @@ body.dark-mode p {
 }
 
 .custom-button-0 {
-	z-index: 1;
+	z-index: 2;
 	position: relative;
     background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
 }
 
 .custom-button-0::before {
-	z-index: -1;
+	z-index: -2;
 	position: absolute;
 	content: '';
 	top: 0;
@@ -99,13 +131,13 @@ body.dark-mode p {
 }
 
 .custom-button-1 {
-	z-index: 1;
+	z-index: 2;
 	position: relative;
     background-image: linear-gradient(to right, var(--col-l-1), var(--col-r-1));
 }
 
 .custom-button-1::before {
-	z-index: -1;
+	z-index: -2;
 	position: absolute;
 	content: '';
 	top: 0;
@@ -123,13 +155,13 @@ body.dark-mode p {
 }
 
 .custom-button-2 {
-	z-index: 1;
+	z-index: 2;
 	position: relative;
     background-image: linear-gradient(to right, var(--col-l-2), var(--col-r-2));
 }
 
 .custom-button-2::before {
-	z-index: -1;
+	z-index: -2;
 	position: absolute;
 	content: '';
 	top: 0;
@@ -144,20 +176,4 @@ body.dark-mode p {
 
 .custom-button-2:hover::before {
 	opacity: 1;
-}
-
-.custom-button-1 {
-    background-image: linear-gradient(to right, var(--col-l-1), var(--col-r-1));
-}
-
-.custom-button-2 {
-    background-image: linear-gradient(to right, var(--col-l-2), var(--col-r-2));
-}
-
-.custom-button-1:hover {
-    background-image: linear-gradient(to right, hsl(calc(var(--col-l-1-h) - 30), 100%, 50%), hsl(calc(var(--col-r-1-h) - 30), 100%, 50%));
-}
-
-.custom-button-2:hover {
-    background-image: linear-gradient(to right, hsl(calc(var(--col-l-2-h) - 30), 100%, 50%), hsl(calc(var(--col-r-2-h) - 30), 100%, 50%));
 }
