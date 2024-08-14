@@ -1,16 +1,16 @@
 :root {
-	--col-l-0-h: 197;
-	--col-r-0-h: 237;
-	--col-l-1-h: 237;
-	--col-r-1-h: 320;
-	--col-l-2-h: 320;
-	--col-r-2-h: 20;
-	--col-l-0: #2FB7E0;
-	--col-r-0: #582FE0;
-	--col-l-1: #582FE0;
-	--col-r-1: #E02FB7;
-	--col-l-2: #E02FB7;
-	--col-r-2: #E0582F;
+	--col-0-l-h: 197;
+	--col-0-r-h: 237;
+	--col-1-l-h: 237;
+	--col-1-r-h: 320;
+	--col-2-l-h: 320;
+	--col-2-r-h: 20;
+	--col-0-l: #2FB7E0;
+	--col-0-r: #582FE0;
+	--col-1-l: #582FE0;
+	--col-1-r: #E02FB7;
+	--col-2-l: #E02FB7;
+	--col-2-r: #E0582F;
 }
 
 body {
@@ -19,8 +19,8 @@ body {
     color: #101010;
     text-align: left;
     line-height: 1.25;
-    margin: 20px;
-    padding: 20px;
+    margin: 24px;
+    padding: 24px;
 }
 
 h1 {
@@ -62,6 +62,38 @@ body.dark-mode p {
     color: #F0F0F0;
 }
 
+/**/
+
+.navbar {
+    padding: 10px 0;
+    margin-bottom: 48px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.navbar a {
+    color: var(--col-0-l);
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: hsl(var(--col-0-l-h), 100%, 33%);
+}
+
+/**/
+
 .custom-button-container {
     position: relative;
     display: inline-block;
@@ -96,7 +128,7 @@ body.dark-mode p {
     position: relative;
     z-index: 2;
     cursor: pointer;
-    background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
+    background-image: linear-gradient(to right, var(--col-0-l), var(--col-0-r));
     font-family: Consolas, sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -109,7 +141,7 @@ body.dark-mode p {
 .custom-button-0 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-l-0), var(--col-r-0));
+    background-image: linear-gradient(to right, var(--col-0-l), var(--col-0-r));
 }
 
 .custom-button-0::before {
@@ -120,7 +152,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-0-h) - 150), 100%, 50%), hsl(calc(var(--col-r-0-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-0-l-h) - 150), 100%, 50%), hsl(calc(var(--col-0-r-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -133,7 +165,7 @@ body.dark-mode p {
 .custom-button-1 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-l-1), var(--col-r-1));
+    background-image: linear-gradient(to right, var(--col-1-l), var(--col-1-r));
 }
 
 .custom-button-1::before {
@@ -144,7 +176,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-1-h) - 150), 100%, 50%), hsl(calc(var(--col-r-1-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-1-l-h) - 150), 100%, 50%), hsl(calc(var(--col-1-r-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -157,7 +189,7 @@ body.dark-mode p {
 .custom-button-2 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-l-2), var(--col-r-2));
+    background-image: linear-gradient(to right, var(--col-2-l), var(--col-2-r));
 }
 
 .custom-button-2::before {
@@ -168,7 +200,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-l-2-h) - 150), 100%, 50%), hsl(calc(var(--col-r-2-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-2-l-h) - 150), 100%, 50%), hsl(calc(var(--col-2-r-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
