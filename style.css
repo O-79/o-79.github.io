@@ -35,7 +35,7 @@ p {
 
 .theme-toggle {
     cursor: pointer;
-    position: sticky;
+    position: fixed;
     top: 32px;
     right: 32px;
     background: none;
