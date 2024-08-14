@@ -1,4 +1,10 @@
 :root {
+	--col-W-A: #F0F0F0;
+	--col-W-B: #C0C0C0;
+	--col-G-A: #707070;
+	--col-G-B: #404040;
+	--col-B-A: #101010;
+	
 	--col-0-l-h: 197;
 	--col-0-r-h: 237;
 	--col-1-l-h: 237;
@@ -15,8 +21,8 @@
 
 body {
     font-family: Consolas, sans-serif;
-    background-color: #F0F0F0;
-    color: #101010;
+    background-color: var(--col-W-A);
+    color: var(--col-B-A);
     text-align: left;
     line-height: 1.25;
     margin: 24px;
@@ -25,12 +31,24 @@ body {
 
 h1 {
     font-family: Consolas, sans-serif;
-    color: #404040;
+    color: var(--col-G-B);
+}
+
+h2 {
+	font-family: Consolas, sans-serif;
+	font-weight: lighter;
+	font-style: none;
+	color: var(--col-G-A);
+}
+
+h2 a {
+	text-decoration: none;
+    color: var(--col-G-A);
 }
 
 p {
     font-family: 'Segoe UI', sans-serif;
-    color: #101010;
+    color: var(--col-B-A);
 }
 
 .theme-toggle {
@@ -40,7 +58,6 @@ p {
     right: 32px;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0;
 }
 
@@ -50,16 +67,16 @@ p {
 }
 
 body.dark-mode {
-    background-color: #404040;
-    color: #F0F0F0;
+    background-color: var(--col-G-B);
+    color: var(--col-W-A);
 }
 
 body.dark-mode h1 {
-    color: #C0C0C0;
+    color: var(--col-W-B);
 }
 
 body.dark-mode p {
-    color: #F0F0F0;
+    color: var(--col-W-A);
 }
 
 /**/
@@ -111,10 +128,10 @@ body.dark-mode p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #C0C0C0;
+    background-color: var(--col-W-B);
 	font-family: 'Segoe UI', sans-serif;
 	font-size: 12px;
-    color: #404040;
+    color: var(--col-G-B);
     padding: 10px;
     box-sizing: border-box;
     transition: all 0.50s ease-out;
@@ -130,6 +147,8 @@ body.dark-mode p {
     opacity: 1;
     z-index: 1;
 }
+
+/**/
 
 .custom-button {
     position: relative;
@@ -215,6 +234,23 @@ body.dark-mode p {
 
 .custom-button-2:hover::before {
 	opacity: 1;
+}
+
+/**/
+
+.logo-link {
+	cursor: pointer;
+    position: relative;
+	margin-top: 24px;
+	margin-right: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.logo-link img {
+    width: 64px;
+    height: 64px;
 }
 
 /**/

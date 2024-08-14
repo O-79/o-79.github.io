@@ -1,0 +1,8 @@
+# Testing
+test*.*
+
+# Secrets
+key.*
+
+# Extra files
+resources/extra/
