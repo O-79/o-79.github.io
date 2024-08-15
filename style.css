@@ -6,18 +6,18 @@
 	--col-G-B: #404040;
 	--col-B-A: #101010;
 	
-	--col-0-l-h: 197;
-	--col-0-r-h: 237;
-	--col-1-l-h: 237;
-	--col-1-r-h: 320;
-	--col-2-l-h: 320;
-	--col-2-r-h: 20;
-	--col-0-l: #2FB7E0;
-	--col-0-r: #582FE0;
-	--col-1-l: #582FE0;
-	--col-1-r: #E02FB7;
-	--col-2-l: #E02FB7;
-	--col-2-r: #E0582F;
+	--col-0-L-h: 197;
+	--col-0-R-h: 237;
+	--col-1-L-h: 237;
+	--col-1-R-h: 320;
+	--col-2-L-h: 320;
+	--col-2-R-h: 20;
+	--col-0-L: #2FB7E0;
+	--col-0-R: #582FE0;
+	--col-1-L: #582FE0;
+	--col-1-R: #E02FB7;
+	--col-2-L: #E02FB7;
+	--col-2-R: #E0582F;
 }
 
 * {
@@ -25,9 +25,10 @@
 }
 
 body {
-    font-family: Consolas, sans-serif;
-    background-color: var(--col-W-A);
+    font-family: 'Segoe UI', sans-serif;
+	font-size: 16px;
     color: var(--col-B-A);
+    background-color: var(--col-W-A);
     text-align: left;
     line-height: 1.25;
     margin: 24px;
@@ -35,25 +36,42 @@ body {
 }
 
 h1 {
-    font-family: Consolas, sans-serif;
+    font-family: 'Consolas', 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+	font-size: 36px;
+	font-weight: bold;
     color: var(--col-G-B);
 }
 
 h2 {
-	font-family: Consolas, sans-serif;
+	font-family: 'Consolas', 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+	font-size: 24px;
 	font-weight: lighter;
-	font-style: none;
 	color: var(--col-G-A);
 }
 
-h2 a {
-	text-decoration: none;
-    color: var(--col-G-A);
+h3 {
+	font-family: 'Consolas', 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+	font-size: 18px;
+	font-weight: lighter;
+	color: var(--col-G-A);
 }
 
 p {
     font-family: 'Segoe UI', sans-serif;
+	font-size: 16px;
     color: var(--col-B-A);
+}
+
+summary {
+	cursor: pointer;
+	font-family: 'Consolas', 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+	font-size: 18px;
+	font-weight: lighter;
+	color: var(--col-G-A);
+}
+
+iframe {
+	border: none;
 }
 
 .theme-toggle {
@@ -80,8 +98,20 @@ body.dark-mode h1 {
     color: var(--col-W-B);
 }
 
+body.dark-mode h2 {
+    color: var(--col-W-C);
+}
+
+body.dark-mode h3 {
+    color: var(--col-0-L);
+}
+
 body.dark-mode p {
     color: var(--col-W-A);
+}
+
+body.dark-mode summary {
+	color: var(--col-0-L)
 }
 
 /**/
@@ -111,14 +141,14 @@ body.dark-mode p {
 }
 
 .navbar a {
-    color: var(--col-0-l);
+    color: var(--col-0-L);
     text-decoration: none;
     font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
 }
 
 .navbar a:hover {
-    color: hsl(var(--col-0-l-h), 100%, 33%);
+    color: hsl(var(--col-0-L-h), 100%, 33%);
 }
 
 /**/
@@ -160,8 +190,9 @@ body.dark-mode p {
     position: relative;
     z-index: 2;
     cursor: pointer;
-    background-image: linear-gradient(to right, var(--col-0-l), var(--col-0-r));
-    font-family: Consolas, sans-serif;
+    background-image: linear-gradient(to right, var(--col-0-L), var(--col-0-R));
+    font-family: 'Consolas', 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
@@ -173,7 +204,7 @@ body.dark-mode p {
 .custom-button-0 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-0-l), var(--col-0-r));
+    background-image: linear-gradient(to right, var(--col-0-L), var(--col-0-R));
 }
 
 .custom-button-0::before {
@@ -184,7 +215,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-0-l-h) - 150), 100%, 50%), hsl(calc(var(--col-0-r-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-0-L-h) - 150), 100%, 50%), hsl(calc(var(--col-0-R-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -197,7 +228,7 @@ body.dark-mode p {
 .custom-button-1 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-1-l), var(--col-1-r));
+    background-image: linear-gradient(to right, var(--col-1-L), var(--col-1-R));
 }
 
 .custom-button-1::before {
@@ -208,7 +239,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-1-l-h) - 150), 100%, 50%), hsl(calc(var(--col-1-r-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-1-L-h) - 150), 100%, 50%), hsl(calc(var(--col-1-R-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
@@ -221,7 +252,7 @@ body.dark-mode p {
 .custom-button-2 {
 	z-index: 2;
 	position: relative;
-    background-image: linear-gradient(to right, var(--col-2-l), var(--col-2-r));
+    background-image: linear-gradient(to right, var(--col-2-L), var(--col-2-R));
 }
 
 .custom-button-2::before {
@@ -232,7 +263,7 @@ body.dark-mode p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to bottom, hsl(calc(var(--col-2-l-h) - 150), 100%, 50%), hsl(calc(var(--col-2-r-h) - 180), 100%, 50%));
+	background-image: linear-gradient(to bottom, hsl(calc(var(--col-2-L-h) - 150), 100%, 50%), hsl(calc(var(--col-2-R-h) - 180), 100%, 50%));
 	transition: opacity 0.75s linear;
 	opacity: 0;
     border-radius: 4px;
