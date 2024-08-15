@@ -129,12 +129,12 @@ body.dark-mode p {
 }
 
 .info-text {
+	z-index: -1;
     position: absolute;
     top: 100%;
     left: 0;
 	min-width: 64px;
 	max-width: 100%;
-	
     background-color: var(--col-W-B);
 	font-family: 'Segoe UI', sans-serif;
 	font-size: 12px;
