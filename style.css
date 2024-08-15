@@ -1,6 +1,7 @@
 :root {
 	--col-W-A: #F0F0F0;
 	--col-W-B: #C0C0C0;
+	--col-W-C: #909090;
 	--col-G-A: #707070;
 	--col-G-B: #404040;
 	--col-B-A: #101010;
@@ -244,6 +245,7 @@ body.dark-mode p {
 /**/
 
 .logo-link {
+	z-index: 2;
 	cursor: pointer;
     position: relative;
 	margin-top: 24px;
