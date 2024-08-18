@@ -12,3 +12,6 @@ resources/extra/
 
 # TODO
 TODO.txt
+
+# pycache
+__pycache__
